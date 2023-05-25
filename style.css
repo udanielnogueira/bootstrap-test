@@ -1,11 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+
+
+:root {
+    --green: rgb(247, 247, 247);
+}
+
+.meu-body {
+    background-color: rgb(16, 16, 16);
+    font-family: Roboto, sans-serif;
+}
+
 .meu-icon {
     font-size: 7rem;
+    color: var(--green);
+    animation: move 2s ease-in-out 500ms infinite alternate;
 }
 
 .meu-404 {
-    font-size: 7rem;
+    font-size: 5rem;
+    color: var(--green);
+    letter-spacing: 0.5rem;
+    text-transform: uppercase;
 }
 
 .meu-container {
     gap: 4rem;
+}
+
+@keyframes move {
+    from {
+        transform: rotate(-15deg);
+    }
+    to {
+        transform: rotate(25deg);
+    }
 }
